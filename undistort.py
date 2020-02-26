@@ -3,7 +3,7 @@ import cv2
 import time
 import sys
 
-with open("config.pkl",'rb') as config:
+with open("./config/config.pkl",'rb') as config:
     data = pickle.load(config)
 
 mtx = data['mtx']

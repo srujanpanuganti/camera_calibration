@@ -14,7 +14,7 @@ objp[:,:2] = np.mgrid[0:7,0:6].T.reshape(-1,2)
 objpoints = [] # 3d point in real world space
 imgpoints = [] # 2d points in image plane.
 
-images = glob.glob('*.jpg')
+images = glob.glob('./raw_samples/*.jpg')
 
 for fname in images:
     img = cv2.imread(fname)
@@ -50,7 +50,7 @@ data['tvecs'] = tvecs
 print(ret,'\n', mtx,'\n',dist,'\n',rvecs,'\n',tvecs)
 
 import pickle
-with open('config.pkl', 'wb') as outfile:
+with open('./config/config.pkl', 'wb') as outfile:
     pickle.dump(data, outfile)
 
 
@@ -69,7 +69,7 @@ for fname in images:
     # crop the image
     x,y,w,h = roi
     dst = dst[y:y+h, x:x+w]
-    cv2.imwrite('/calibration_samples/calibrated_pic{:>05}.jpg'.format(i),dst)
+    cv2.imwrite('./calibrated_samples/calibrated_pic{:>05}.jpg'.format(i),dst)
     i+=1
 
 

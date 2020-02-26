@@ -35,6 +35,6 @@ while count < 100:
 
 i = 1
 for im in all_imgs:
-    # cv2.imwrite('pic{:>05}.jpg'.format(i), im)
+    cv2.imwrite('./raw_samples/pic{:>05}.jpg'.format(i), im)
     i+=1
 print('[INFO] : user has been saved to the database')
