@@ -15,6 +15,6 @@ Ideally, keep between 10-14 raw samples.
 
 Here are the results:
 
-![result](images/result.png)
+<img src="images/result.png" alt="result"> 
 
 These steps are followed from OpenCV Python Tutorials. https://opencv-python-tutroals.readthedocs.io
