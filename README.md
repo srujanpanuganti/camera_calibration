@@ -4,7 +4,7 @@ These steps can be comfortably used to calibrate Arducam IMX219 fisheye lens for
 
 Steps to calibrate a camera
 
-* Print out the 7x6 chess board image attached in `images/chessboards_7x6.png` on an A4 size sheet
+* Print out the 7x8 chess board image attached in `images/chessboards_7x8.png` on an A4 size sheet
 
 * Use the camera_calibration.py to generate images of chess_board in several different angles.
 This script will generate 100 raw samples to raw_samples folder. Except few good images, delete all other images from the folder.
