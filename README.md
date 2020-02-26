@@ -13,4 +13,9 @@ Ideally, keep between 10-14 raw samples.
 * Now run the distortion_coeff.py to generate the distortion coefficients. These coefficients are saved to config/config.pkl file
 * now run the undistort.py to see the results of calibraton from raw image to undistorted image
 
+Here are the results:
+
+<img src="figures/predict.png" width="540">
+
+
 These steps are followed from OpenCV Python Tutorials. https://opencv-python-tutroals.readthedocs.io
