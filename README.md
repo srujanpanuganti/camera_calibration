@@ -15,7 +15,6 @@ Ideally, keep between 10-14 raw samples.
 
 Here are the results:
 
-<img src="figures/predict.png" width="540">
-
+<img src="images/result.png" width="540">
 
 These steps are followed from OpenCV Python Tutorials. https://opencv-python-tutroals.readthedocs.io
